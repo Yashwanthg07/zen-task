@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTask | Modern Task Manager</title>
+    <meta name="description"
+        content="A premium, accessible, and performant task manager built with vanilla TypeScript.">
+    <link rel="stylesheet" href="src/styles/variables.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/components/task-card.css">
+    <link rel="stylesheet" href="src/styles/components/modal.css">
+    <link rel="stylesheet" href="src/styles/components/filters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-icon">✨</span>
+                    <h1>ZenTask</h1>
+                </div>
+                <div class="header-actions">
+                    <div id="search-container"></div>
+                    <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle theme">
+                        <!-- Icons will be injected by JS -->
+                    </button>
+                    <button id="add-task-btn" class="btn btn-primary">
+                        <span class="icon">+</span>
+                        <span>New Task</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="filters-section" id="filters-container">
+                <!-- Filters will be injected here -->
+            </section>
+
+            <section class="tasks-section">
+                <div class="section-header">
+                    <h2 id="section-title">All Tasks</h2>
+                    <span id="task-count" class="count-badge">0</span>
+                </div>
+                <div id="task-list" class="task-grid">
+                    <!-- Tasks will be injected here -->
+                </div>
+                <div id="empty-state" class="empty-state hidden">
+                    <div class="empty-state-illust">📝</div>
+                    <h3>No tasks found</h3>
+                    <p>Clean slate! Ready to start something new?</p>
+                </div>
+            </section>
+        </main>
+
+        <div id="modal-root"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
