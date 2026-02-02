@@ -2,11 +2,6 @@
 
 A premium, production-quality Task Manager built with **Vanilla TypeScript** and **Modern CSS**. No frameworks, no libraries—just clean, performant code.
 
-## � Documentation
-
-- [**PRD (Product Requirements Document)**](file:///c:/Users/yashw/Documents/GitHub/zen-task/PRD.md) - Design philosophy and core goals.
-- [**FSD (Functional Specification Document)**](file:///c:/Users/yashw/Documents/GitHub/zen-task/FSD.md) - Technical implementation details and architecture.
-
 ## 🚀 Key Features
 
 - **🌓 Dynamic Theming**: Instant toggle between Light and Dark modes. Persists in LocalStorage and respects system preferences.
@@ -39,4 +34,4 @@ ZenTask follows a scalable, decoupled architecture:
 3. **Optional**: Run `npm install` and `npm run build` (if dev scripts are configured) for development.
 
 ---
-Built with Zen 🧘
+Built by Yashwanth G❤️
